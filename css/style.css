@@ -1,0 +1,629 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(58, 56, 56);
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+/* Nnavigation bar : bakery and image */
+#bakery{
+    margin: 10px 34px;
+}
+#bakery img{
+    height: 50px;
+    width: 50px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+/* Navigation bar : list styling*/
+#navbar ul{
+    display: flex;
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}   
+
+/* Home section*/
+#home{
+    display:flex ;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height:445px;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background-image:url('image.png');
+    background-size: cover;
+    height:68%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+#home h1{
+    color:#5E0006;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+/*services section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid black;
+    height: auto;
+    width:50%;
+    margin-top: 10px;
+    padding: 34px;
+    margin:3px 6px;
+    border-radius: 28px;
+    background: #f6e9e9;;
+}
+
+
+#services .box{
+    overflow: hidden;
+}
+
+
+#services .box img{
+    margin-left: 90px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+}
+
+#services .box p{
+    font-family:"Inter", sans-serif;
+}
+
+
+
+/* #services .box h2,p{
+      margin-bottom: 40px;
+} */
+/*utility class*/
+.h-primary{
+    font-size: 3.4rem;
+    padding:12px;
+    font-family: "Inter", sans-serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding:12px;
+    font-family: "Inter", sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color:azure;
+    color: black;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/*body{
+    font-family: Arial, sans-serif;
+    background-color:#f6e9e9;
+    margin:0;
+}*/
+
+
+.title{
+
+    font-size: 3.4rem;
+    padding:12px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    background-color: #FFDCDC
+}
+
+.container{
+    width:80%;
+    margin:auto;
+     display:grid;
+    grid-template-columns:repeat(2,1fr); 
+    gap:20px;
+    object-fit: cover;
+    margin-top:30px;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+
+.card{
+    background:white;
+    padding:10px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    background-color:#f6e9e9;
+}
+
+.card img{
+    width:100%;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#a67c00;
+}
+
+.packets{
+    background:white;
+    padding:10px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    background-color:#f6e9e9;
+}
+
+
+.packaging{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.packets img{
+    width:100%;
+    border-radius:10px;
+}
+
+/*hamper section"*/
+
+.offer-bar{
+   text-align:center;
+   color:black ;
+   margin-top: 50px;
+   font-size: 35px;
+   font-family: "Inter", sans-serif;
+   background-color: #FFDCDC;
+}
+
+.hamper{
+   margin-left: 45px;
+   color: #C2A68C;
+   margin: 17px;
+   font-size: 40px;
+   font-family: "Momo Signature", cursive;
+}
+
+.desc{
+   /*margin-left:45px;*/
+   color: #DBB5B5;
+   margin: 20px;
+   font-size: 25px;
+   font-family: "Momo Signature", cursive;
+   text-align: center;
+}
+
+/*shop image*/
+.shop img{
+    text-align: center;
+    border-radius: 10px;
+    height:auto;
+    width: 300px;
+    display: block;
+    margin: auto;
+    box-shadow: #F5D3C4;
+    margin-top: 65px;
+
+}
+
+.feature-box h2{
+    color: #D14D72;   /* Soft pink */
+}
+
+.feature-box p{
+    color: #5A5A5A;   /* Neutral grey */
+}
+
+.features{
+    background-color: #FFF0F5; /* Light pink background */
+}
+/*footer*/
+
+footer{
+    background-color: beige;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    font-size: 28px;
+    color: black;
+}
+
+
+ @media (max-width: 768px) {
+
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        margin: 8px 0;
+    }
+
+    /* HOME SECTION */
+    #home {
+        padding: 20px;
+        height: auto;
+    }
+
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 14px;
+    }
+
+    /* Services container */
+    #services {
+        flex-direction: column;   /* stack vertically */
+        align-items: center;
+        margin: 20px 10px;
+    }
+
+    /* Each service box */
+    #services .box {
+        width: 90%;              /* full width */
+        height: auto;            /* auto height */
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    /* Service images */
+    #services .box img {
+        display: block;
+        margin: 0 auto;          /* center image */
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Headings */
+    #services .box h2 {
+        font-size: 20px;
+    }
+
+    /* Paragraph text */
+    #services .box p {
+        font-size: 14px;
+        
+}
+    
+
+    /* PRODUCTS GRID */
+    .container {
+        grid-template-columns: 1fr; /* 1 column */
+        width: 90%;
+    }
+
+    /* PACKAGING */
+    .packaging {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    /* TEXT SECTIONS */
+    .title {
+        font-size: 24px;
+    }
+
+    .offer-bar {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hamper {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* SHOP IMAGE */
+    .shop img {
+        width: 90%;
+    }
+
+    /* FEATURES */
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .feature-box h2 {
+        font-size: 20px;
+    }
+
+    .feature-box p {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer p {
+        font-size: 18px;
+    }
+
+    
+@media (max-width: 1100px) {
+
+    #services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #services .box {
+        width: 45%;
+    }
+} 
+
+ }
+
+
+
+
+
+ .card{
+    width:200px;
+    background:#f6e9e9;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.add-to-cart{
+    margin-top:10px;
+    padding:8px;
+    background:#a67c00;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* CART */
+#cart{
+    margin:20px;
+    padding:20px;
+    background:#eee;
+}
+
+/* FEATURES */
+.features{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+}
+
+.feature-box{
+    width:60%;
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ddd;
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Momo Signature", cursive;
+}
+
+/* BODY */
+body{
+    background:#f6e9e9;
+}
+
+
+
+
+
+
+/* CART ICON */
+.cart-icon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ffb6b9;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#cart-count{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: pink;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+#cart{
+    display: none;
+}
+#cart.active{
+    display: block;
+}
+
+/* Section Title */
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Container Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 50px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    padding-bottom: 15px;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product Name */
+.card h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #444;
+}
+
+/* Button */
+.card button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6b6b, #ff3b3b);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.card button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff3b3b, #ff0000);
+}
+
+/* transiton properties */
+.offer-bar {
+    background-color: #D14D72;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.offer-bar span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
